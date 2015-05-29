@@ -1,5 +1,4 @@
 # Gulp
-一起学习在开发中使用Gulp
 
 ###安装Gulp
 	$ npm install --global gulp
