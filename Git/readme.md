@@ -32,6 +32,17 @@
 	git merge upstream/master 
     /* rebase也可以 ×/
 	git rebase upstream/master
+
+###git 添加忽略文件
+
+	//.gitignore中添加
+	# 此为注释 – 将被 Git 忽略
+	*.a       # 忽略所有 .a 结尾的文件
+	!lib.a    # 但 lib.a 除外
+	/TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+	build/    # 忽略 build/ 目录下的所有文件
+	doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+
 ###git 其他命令使用
 
 - git revert 撤销 某次操作，此次操作之前和之后的commit和history都会保留，并且把这次撤销作为一次最新的提交 
